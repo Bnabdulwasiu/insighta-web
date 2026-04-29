@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const client = axios.create({
-  baseURL: 'http://localhost:8000',
+  baseURL: 'https://profile-app-5343e495.fastapicloud.dev',
   withCredentials: true, // send HTTP-only cookies automatically
   headers: {
     'X-API-Version': '1',
@@ -39,7 +39,7 @@ client.interceptors.response.use(
 
       try {
         await axios.post(
-          'http://localhost:8000/auth/web/refresh',
+          'https://profile-app-5343e495.fastapicloud.dev/auth/web/refresh',
           {},
           { withCredentials: true }
         );
