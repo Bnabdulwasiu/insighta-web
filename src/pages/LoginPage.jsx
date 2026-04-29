@@ -24,7 +24,7 @@ const ShieldIcon = () => (
 
 function LoginPage() {
   const handleGitHubLogin = () => {
-    window.location.href = 'http://localhost:8000/auth/web/github';
+    window.location.href = 'https://profile-app-5343e495.fastapicloud.dev/auth/web/github';
   };
 
   return (
